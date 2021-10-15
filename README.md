@@ -12,3 +12,4 @@ This app uses the following libraries:
 - Coroutine with Flow
 - Material Design Library
 
+![](Shahrukh%20Jungsoo%20App.gif)
