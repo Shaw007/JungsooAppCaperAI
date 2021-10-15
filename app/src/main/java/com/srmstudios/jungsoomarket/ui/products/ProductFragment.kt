@@ -6,6 +6,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -17,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ProductFragment: Fragment(R.layout.fragment_product){
     private lateinit var binding: FragmentProductBinding
-    private val viewModel: JungsooViewModel by viewModels()
+    private val viewModel: JungsooViewModel by activityViewModels()
     private lateinit var adapter: ProductAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {

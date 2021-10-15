@@ -3,6 +3,7 @@ package com.srmstudios.jungsoomarket.ui.cart
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.srmstudios.jungsoomarket.R
@@ -13,7 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class CartFragment: Fragment(R.layout.fragment_cart){
     private lateinit var binding: FragmentCartBinding
-    private val viewModel: JungsooViewModel by viewModels()
+    private val viewModel: JungsooViewModel by activityViewModels()
     private lateinit var adapter: CartAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
