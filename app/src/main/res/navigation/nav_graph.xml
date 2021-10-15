@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.srmstudios.jungsoomarket.ui.products.ProductFragment"
+        android:label="@string/products"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_homeFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.srmstudios.jungsoomarket.ui.cart.CartFragment"
+        android:label="@string/your_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.srmstudios.jungsoomarket.ui.product_detail.ProductDetailFragment"
+        android:label="@string/product_detail_title"
+        tools:layout="@layout/fragment_product_detail" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="product"
+            app:argType="com.srmstudios.jungsoomarket.data.database.entity.Product" />
+    </fragment>
+</navigation>

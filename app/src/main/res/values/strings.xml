@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Jungsoo Market</string>
+    <string name="products">Products</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="quantity_with_colon">Quantity: </string>
+    <string name="total_with_colon">Total: </string>
+    <string name="qr_hint">Tap single or multiple times on the QR code to add single or multiple items respectedly</string>
+    <string name="product_detail_title">{title}</string>
+    <string name="remove_product">Remove Product?</string>
+    <string name="remove_product_confirmation">Are you sure you want to remove this product?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="product_added_successfully">Product added successfully</string>
+</resources>
